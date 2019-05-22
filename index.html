@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="responsividade.css">
+    <title>API DOG</title>
+</head>
+<body>
+    <section>
+        <div>
+            <h1>Raças de cachorro:</h1>
+            <select id="racas">
+                <option value="">--</option>
+                <option value="">Akita</option>
+                <option value="">American staffordshire terrier</option>
+                <option value="">Basset</option>
+                <option value="">Beagle</option>
+                <option value="">Bichon frisé</option>
+                <option value="">Boiadeiro australiano</option>
+                <option value="">Border collie</option>
+                <option value="">Boston terrier</option>
+                <option value="">Boxer</option>
+                <option value="">Buldogue francês</option>
+                <option value="">Buldogue inglês</option>
+                <option value="">Bull terrier</option>
+                <option value="">Cane corso</option>
+                <option value="">Cavalier king charles spaniel</option>
+                <option value="">Chihuahua</option>
+                <option value="">Chow chow</option>
+                <option value="">Cocker spaniel inglês</option>
+                <option value="">Dechshund</option>
+                <option value="">Dálmata</option>
+                <option value="">Doberman</option>
+                <option value="">Dogo argentino</option>
+                <option value="">Dogue alemão</option>
+                <option value="">Fila brasileiro</option>
+                <option value="">Golden retriever</option>
+                <option value="">Husky siberiano</option>
+                <option value="">Jack russell terrier</option>
+                <option value="">Labrador retriever</option>
+                <option value="">Lhasa apso</option>
+                <option value="">Lulu da Pomerânia</option>
+                <option value="">Maltês</option>
+                <option value="">Mastiff inglês</option>
+                <option value="">Mastim tibetano</option>
+                <option value="">Pastor alemão</option>
+                <option value="">Pastor australiano</option>
+                <option value="">Pastor de shetland</option>
+                <option value="">Pequinês</option>
+                <option value="">Pinscher miniatura</option>
+                <option value="">Poodle</option>
+                <option value="">Pug</option>
+                <option value="">Rottwelier</option>
+                <option value="">Schnauzer</option>
+                <option value="">Shar-pei</option>
+                <option value="">Shiba</option>
+                <option value="">Shih tzu</option>
+                <option value="">Staffordshire bull terrier</option>
+                <option value="">Vira-lata</option>
+                <option value="">Weimaraner</option>
+                <option value="">Yorkshire terrier</option>
+            </select>
+        </div>
+        <div>
+            <h2>Formatação:</h2>
+            <input type="text" placeholder="Nome do cachorro:">
+            <label>
+                Cores: 
+                <select>
+                    <option value="white">Branco</option>
+                    <option value="red">Vermelho</option>
+                    <option value="blue">Azul</option>
+                    <option value="green">Verde</option>
+                    <option value="brown">Marrom</option>
+                    <option value="yellow">Amarelo</option>
+                </select>
+            </label>
+            <label>
+                Fontes: 
+                <select>
+                    <option value="">Padrão</option>
+                    <option value="">Roboto</option>
+                    <option value="">Open sans</option>
+                    <option value="">Lato</option>
+                    <option value="">Oswald</option>
+                    <option value="">Releway</option>
+                </select>
+            </label>
+            <button id="pronto">Pronto</button>
+        </div>
+
+        <div>
+            <img id="imagemDoguinho"></img>
+            <div id="mostrar"></div>
+            <button id="salvar">Salvar</button>
+        </div>
+
+        <div>
+            <h2>Salvos</h2>
+            <table>
+                <tr>
+                    <th>Nome:</th>
+                    <th>Raça:</th>
+                    <th>Data:</th>
+                </tr>
+            </table>
+        </div>
+    </section>
+</body>
+</html>

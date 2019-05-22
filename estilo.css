@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(22, 21, 21);
+}
+
+section{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div{
+    position: relative;
+    margin: 10px 0px;
+    width: 80vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}
+
+select{
+    border: none;
+    border-radius: 2px;
+    background-color: rgb(22, 21, 21);
+    color: white;
+}
+
+input{
+    height: 20px;
+    font-size: 12pt;
+    border: none;
+    border-radius: 2px;
+    background-color: black;
+    color:white;
+}
+
+#pronto{
+    border: none;
+    border-radius: 2px;
+    background-color: black;
+    color:white;
+    cursor: pointer;
+}
+
+#imagemDoguinho{
+    display: none;
+    width: 75%;
+    height: 75%;
+}
+
+#mostrar{
+    display: none;
+    bottom: 10vh;
+    width: 160px;
+    height: 40px;
+    background-color: black;
+    position: absolute;
+    z-index: 1;
+}
+
+#salvar{
+    display: none;
+    border: none;
+    border-radius: 2px;
+    background-color: black;
+    color:white;
+    cursor: pointer;
+}
+
+table{
+    width: 95%;
+    border: solid 2px black;
+}
+
+th, td, tr{
+    padding-left: 4px;
+    text-align: justify;
+    border: solid 2px black;
+}

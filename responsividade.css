@@ -1,0 +1,18 @@
+@media(min-width: 600px){
+    
+section{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+div{
+    width: 45%;
+    height: 45vh;
+}
+
+label{
+    font-size: 14pt;
+}
+
+}
