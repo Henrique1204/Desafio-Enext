@@ -4,69 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet" href="responsividade.css">
     <title>API DOG</title>
 </head>
 <body>
     <section>
-        <div>
+        <div class="caixaBranca">
             <h1>Raças de cachorro:</h1>
-            <select id="racas">
-                <option value="">--</option>
-                <option value="">Akita</option>
-                <option value="">American staffordshire terrier</option>
-                <option value="">Basset</option>
-                <option value="">Beagle</option>
-                <option value="">Bichon frisé</option>
-                <option value="">Boiadeiro australiano</option>
-                <option value="">Border collie</option>
-                <option value="">Boston terrier</option>
-                <option value="">Boxer</option>
-                <option value="">Buldogue francês</option>
-                <option value="">Buldogue inglês</option>
-                <option value="">Bull terrier</option>
-                <option value="">Cane corso</option>
-                <option value="">Cavalier king charles spaniel</option>
-                <option value="">Chihuahua</option>
-                <option value="">Chow chow</option>
-                <option value="">Cocker spaniel inglês</option>
-                <option value="">Dechshund</option>
-                <option value="">Dálmata</option>
-                <option value="">Doberman</option>
-                <option value="">Dogo argentino</option>
-                <option value="">Dogue alemão</option>
-                <option value="">Fila brasileiro</option>
-                <option value="">Golden retriever</option>
-                <option value="">Husky siberiano</option>
-                <option value="">Jack russell terrier</option>
-                <option value="">Labrador retriever</option>
-                <option value="">Lhasa apso</option>
-                <option value="">Lulu da Pomerânia</option>
-                <option value="">Maltês</option>
-                <option value="">Mastiff inglês</option>
-                <option value="">Mastim tibetano</option>
-                <option value="">Pastor alemão</option>
-                <option value="">Pastor australiano</option>
-                <option value="">Pastor de shetland</option>
-                <option value="">Pequinês</option>
-                <option value="">Pinscher miniatura</option>
-                <option value="">Poodle</option>
-                <option value="">Pug</option>
-                <option value="">Rottwelier</option>
-                <option value="">Schnauzer</option>
-                <option value="">Shar-pei</option>
-                <option value="">Shiba</option>
-                <option value="">Shih tzu</option>
-                <option value="">Staffordshire bull terrier</option>
-                <option value="">Vira-lata</option>
-                <option value="">Weimaraner</option>
-                <option value="">Yorkshire terrier</option>
+            <select id="racas" onchange="trocaImg(this.value);">
+                <option value="">Escolher raça:</option>
+                <option value="img/akita.jpg">Akita</option>
+                <option value="img/american-staffordshire-terrier.png">American staffordshire terrier</option>
+                <option value="img/basset.png">Basset</option>
+                <option value="img/Beagle.jpg">Beagle</option>
+                <option value="img/Bichon-frise.jpg">Bichon frisé</option>
+                <option value="img/Boiadeiro-australiano.jpg">Boiadeiro australiano</option>
+                <option value="img/Border-Collie.jpg">Border collie</option>
+                <option value="img/Boston-terrier.jpg">Boston terrier</option>
+                <option value="img/boxer.png">Boxer</option>
+                <option value="img/Buldogue-frances.jpg">Buldogue francês</option>
+                <option value="img/buldogue-ingles.jpg">Buldogue inglês</option>
+                <option value="img/bull-terrier.jpg">Bull terrier</option>
+                <option value="img/cane_corso.jpg">Cane corso</option>
+                <option value="img/Cavalier-king-charles-spaniel.jpg">Cavalier king charles spaniel</option>
+                <option value="img/Chihuahua.jpg">Chihuahua</option>
+                <option value="img/Chow-Chow.jpg">Chow chow</option>
+                <option value="img/Cocker-spaniel-ingles.jpg">Cocker spaniel inglês</option>
+                <option value="img/Dachshund.jpg">Dechshund</option>
+                <option value="img/Dalmata.jpg">Dálmata</option>
+                <option value="img/Doberman.jpg">Doberman</option>
+                <option value="img/Dogo-argentino.jpg">Dogo argentino</option>
+                <option value="img/Dogue-alemao.jpg">Dogue alemão</option>
+                <option value="img/fila_brasileiro.jpg">Fila brasileiro</option>
+                <option value="img/Golden-retriever.gif">Golden retriever</option>
+                <option value="img/husky-siberiano.png">Husky siberiano</option>
+                <option value="img/Jack-russell-terrier.jpg">Jack russell terrier</option>
+                <option value="img/Labrador.jpg">Labrador retriever</option>
+                <option value="img/Lhasa-apso.jpg">Lhasa apso</option>
+                <option value="img/Lulu-da-pomerania.jpg">Lulu da Pomerânia</option>
+                <option value="img/maltes.jpg">Maltês</option>
+                <option value="img/mastiff.jpg">Mastiff inglês</option>
+                <option value="img/Mastim-tibetano.jpg">Mastim tibetano</option>
+                <option value="img/Pastor-alemao.jpg">Pastor alemão</option>
+                <option value="img/Pastor-australiano.jpg">Pastor australiano</option>
+                <option value="img/pastor-de-shetland.png">Pastor de shetland</option>
+                <option value="img/Pequines.jpg">Pequinês</option>
+                <option value="img/Pinscher-miniatura.jpg">Pinscher miniatura</option>
+                <option value="img/Poodle.jpg">Poodle</option>
+                <option value="img/Pug.jpg">Pug</option>
+                <option value="img/Rottweiler.jpg">Rottwelier</option>
+                <option value="img/Schnauzer.jpg">Schnauzer</option>
+                <option value="img/Sharpei.jpg">Shar-pei</option>
+                <option value="img/Shiba.jpg">Shiba</option>
+                <option value="img/shih-tzu.jpg">Shih tzu</option>
+                <option value="img/staffordshire-bull-terrier.png">Staffordshire bull terrier</option>
+                <option value="img/vira-lata.jpg">Vira-lata</option>
+                <option value="img/Weimaraner.jpg">Weimaraner</option>
+                <option value="img/Yorkshire-terrier.jpg">Yorkshire terrier</option>
             </select>
         </div>
-        <div>
+        <div class="caixaBranca">
             <h2>Formatação:</h2>
-            <input type="text" placeholder="Nome do cachorro:">
+            <div class="divInput">
+                <input id="nomeNovo" type="text" placeholder="Nome do cachorro:">
+                <button id="pronto">Pronto</button>
+            </div>
             <label>
                 Cores: 
                 <select>
@@ -89,16 +93,20 @@
                     <option value="">Releway</option>
                 </select>
             </label>
-            <button id="pronto">Pronto</button>
         </div>
 
-        <div>
-            <img id="imagemDoguinho"></img>
-            <div id="mostrar"></div>
-            <button id="salvar">Salvar</button>
+        <div class="caixaBranca">
+            <div id="imagem"></div>
+            <div id="legenda">
+                <p id="nomeDoCachorro"></p>
+            </div>
+            <div>
+                <button id="salvar" class="botaoExibicao">Salvar</button>
+                <button id="Limpar" class="botaoExibicao">Limpar</button>
+            </div>
         </div>
 
-        <div>
+        <div class="caixaBranca">
             <h2>Salvos</h2>
             <table>
                 <tr>

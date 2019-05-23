@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    font-family: sans-serif;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
@@ -16,7 +17,7 @@ section{
     align-items: center;
 }
 
-div{
+.caixaBranca{
     position: relative;
     margin: 10px 0px;
     width: 80vw;
@@ -35,6 +36,16 @@ select{
     color: white;
 }
 
+.divInput{
+    margin: 0;
+    width: 55%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; 
+}
+
 input{
     height: 20px;
     font-size: 12pt;
@@ -45,6 +56,7 @@ input{
 }
 
 #pronto{
+    height: 20px;
     border: none;
     border-radius: 2px;
     background-color: black;
@@ -52,24 +64,21 @@ input{
     cursor: pointer;
 }
 
-#imagemDoguinho{
+#imagem{
     display: none;
-    width: 75%;
     height: 75%;
 }
 
 #mostrar{
     display: none;
     bottom: 10vh;
-    width: 160px;
     height: 40px;
     background-color: black;
     position: absolute;
     z-index: 1;
 }
 
-#salvar{
-    display: none;
+.botaoExibicao{
     border: none;
     border-radius: 2px;
     background-color: black;

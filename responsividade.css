@@ -6,13 +6,15 @@ section{
     justify-content: space-evenly;
 }
 
-div{
+.caixaBranca{
     width: 45%;
     height: 45vh;
 }
 
-label{
-    font-size: 14pt;
+.divInput{
+    width: 38%;
 }
 
+label{
+    font-size: 14pt;
 }
