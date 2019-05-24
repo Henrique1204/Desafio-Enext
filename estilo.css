@@ -65,17 +65,20 @@ input{
 }
 
 #imagem{
-    display: none;
     height: 75%;
 }
 
-#mostrar{
+#caixaDaLegenda{
     display: none;
-    bottom: 10vh;
+    bottom: 12vh;
     height: 40px;
-    background-color: black;
     position: absolute;
     z-index: 1;
+}
+
+#legenda{
+    font-size: 15pt;
+    font-weight: bolder;
 }
 
 .botaoExibicao{

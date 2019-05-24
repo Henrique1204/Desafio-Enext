@@ -1,9 +1,33 @@
 let img = document.getElementById("imagem");
-let racas = document.getElementById("racas");
+let caixaDaLegenda = document.getElementById("caixaDaLegenda");
+let legenda = document.getElementById("legenda");
+let novoNome = document.getElementById("nomeNovo");
 
 function trocaImg(item){
 
-    img.innerHTML = '<img src="' + item + '">';
+    img.setAttribute("src", item);
     img.style.display = "block";
 
 };
+
+function trocaCor(item){
+
+    legenda.style.color = item;
+
+};
+
+function trocaFonte(item){
+
+    legenda.style.fontFamily = item;
+
+};
+
+document.getElementById("pronto").addEventListener("click", function(){
+
+    if(img.src != ""){
+        caixaDaLegenda.style.display = "block";
+        legenda.textContent = novoNome.value;
+        novoNome.value = "";
+    }
+
+});

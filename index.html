@@ -7,13 +7,14 @@
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet" href="responsividade.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Oswald|Raleway|Roboto&display=swap" rel="stylesheet">
     <title>API DOG</title>
 </head>
 <body>
     <section>
         <div class="caixaBranca">
             <h1>Raças de cachorro:</h1>
-            <select id="racas" onchange="trocaImg(this.value);">
+            <select onchange="trocaImg(this.value);">
                 <option value="">Escolher raça:</option>
                 <option value="img/akita.jpg">Akita</option>
                 <option value="img/american-staffordshire-terrier.png">American staffordshire terrier</option>
@@ -73,32 +74,32 @@
             </div>
             <label>
                 Cores: 
-                <select>
+                <select onchange="trocaCor(this.value);">
                     <option value="white">Branco</option>
                     <option value="red">Vermelho</option>
                     <option value="blue">Azul</option>
                     <option value="green">Verde</option>
-                    <option value="brown">Marrom</option>
+                    <option value="black">Preto</option>
                     <option value="yellow">Amarelo</option>
                 </select>
             </label>
             <label>
                 Fontes: 
-                <select>
-                    <option value="">Padrão</option>
-                    <option value="">Roboto</option>
-                    <option value="">Open sans</option>
-                    <option value="">Lato</option>
-                    <option value="">Oswald</option>
-                    <option value="">Releway</option>
+                <select onchange="trocaFonte(this.value);">
+                    <option value="sans-serif">Padrão</option>
+                    <option value="Roboto">Roboto</option>
+                    <option value="Open Sans">Open sans</option>
+                    <option value="Lato">Lato</option>
+                    <option value="Oswald">Oswald</option>
+                    <option value="Raleway">Releway</option>
                 </select>
             </label>
         </div>
 
         <div class="caixaBranca">
-            <div id="imagem"></div>
-            <div id="legenda">
-                <p id="nomeDoCachorro"></p>
+            <img id="imagem">
+            <div id="caixaDaLegenda">
+                <p id="legenda"></p>
             </div>
             <div>
                 <button id="salvar" class="botaoExibicao">Salvar</button>
@@ -110,9 +111,9 @@
             <h2>Salvos</h2>
             <table>
                 <tr>
-                    <th>Nome:</th>
-                    <th>Raça:</th>
-                    <th>Data:</th>
+                    <th>Nome</th>
+                    <th>Raça</th>
+                    <th>Data</th>
                 </tr>
             </table>
         </div>
