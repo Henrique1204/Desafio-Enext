@@ -18,6 +18,7 @@ section{
 }
 
 .caixaBranca{
+    padding: 5px;
     position: relative;
     margin: 10px 0px;
     width: 100vw;
