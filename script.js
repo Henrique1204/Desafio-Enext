@@ -31,3 +31,11 @@ document.getElementById("pronto").addEventListener("click", function(){
     }
 
 });
+
+document.getElementById("limpar").addEventListener("click", function(){
+
+    img.src = "";
+    legenda.textContent = "";
+    caixaDaLegenda.style.display = "none";
+
+});
