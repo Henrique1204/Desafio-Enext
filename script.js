@@ -64,5 +64,6 @@ document.getElementById("salvar").addEventListener("click", function(){
     else{
         alert("Escolha a raça e um nome para o cachorro");
     }
+
     
 });
