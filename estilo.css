@@ -20,7 +20,7 @@ section{
 .caixaBranca{
     position: relative;
     margin: 10px 0px;
-    width: 80vw;
+    width: 100vw;
     height: 50vh;
     display: flex;
     flex-direction: column;
@@ -65,6 +65,7 @@ input{
 }
 
 #imagem{
+    width: 75%;
     height: 75%;
 }
 
@@ -89,13 +90,16 @@ input{
     cursor: pointer;
 }
 
-table{
-    width: 95%;
-    border: solid 2px black;
+section>div:nth-child(4){
+    justify-content: center;
 }
 
-th, td, tr{
-    padding-left: 4px;
-    text-align: justify;
-    border: solid 2px black;
+#salvos{
+    font-size: 10pt;
+}
+
+li{
+    margin-bottom: 3px;
+    padding: 1px;
+    border: solid 1px black;
 }

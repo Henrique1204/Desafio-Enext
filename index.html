@@ -14,7 +14,7 @@
     <section>
         <div class="caixaBranca">
             <h1>Raças de cachorro:</h1>
-            <select onchange="trocaImg(this.value);">
+            <select id="racas" onchange="trocaImg(this.value);">
                 <option value="">Escolher raça:</option>
                 <option value="img/akita.jpg">Akita</option>
                 <option value="img/american-staffordshire-terrier.png">American staffordshire terrier</option>
@@ -75,12 +75,12 @@
             <label>
                 Cores: 
                 <select onchange="trocaCor(this.value);">
-                    <option value="white">Branco</option>
+                    <option value="black">Preto</option>
                     <option value="red">Vermelho</option>
                     <option value="blue">Azul</option>
                     <option value="green">Verde</option>
-                    <option value="black">Preto</option>
                     <option value="yellow">Amarelo</option>
+                    <option value="brown">Marrom</option>
                 </select>
             </label>
             <label>
@@ -109,13 +109,7 @@
 
         <div class="caixaBranca">
             <h2>Salvos</h2>
-            <table>
-                <tr>
-                    <th>Nome</th>
-                    <th>Raça</th>
-                    <th>Data</th>
-                </tr>
-            </table>
+            <ol id="salvos"></ol>
         </div>
     </section>
 </body>
